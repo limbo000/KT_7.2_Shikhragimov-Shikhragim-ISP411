@@ -128,6 +128,7 @@ namespace MasterFloor.Pages
                     }
 
                     MessageBox.Show("Успешно изменено!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
                 }
                 else
                 {
@@ -184,6 +185,7 @@ namespace MasterFloor.Pages
 
                     Data.MasterPolEntities.GetContext().PartnersImport.Add(newPartner);
                     MessageBox.Show("Успешно добавлено!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
                 }
 
                 Data.MasterPolEntities.GetContext().SaveChanges();
